@@ -1,0 +1,8 @@
+#ifndef DEALLOCATORDEFINED
+#define DEALLOCATORDEFINED
+
+typedef BOOL (__stdcall *DEALLOCATOR)(LPVOID szString);
+#define INTERNAL_COPY   (DEALLOCATOR)-1
+#define STATIC_COPY     (DEALLOCATOR) 0
+
+#endif
